@@ -1,17 +1,23 @@
+package com.example.homework2
+
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.homework2.Person
 
 class ContactsView : ViewModel() {
 
-    private val contacts = mutableListOf<Person>()
+    private val _contacts = MutableLiveData<MutableList<Person>>()
 
-    fun addContact(contact: Person) {
-        contacts.add(contact)
+    // Initialize the list
+    init {
+        _contacts.value = mutableListOf()
     }
 
-    fun getContacts(): List<Person> {
-        return contacts.toList()
+    val contacts: LiveData<MutableList<Person>>
+        get() = _contacts
+
+    fun addContact(person: Person) {
+        _contacts.value?.add(person)
+        _contacts.postValue(_contacts.value)
     }
 }

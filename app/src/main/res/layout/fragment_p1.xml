@@ -4,10 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".fragment1"
+    tools:context=".Fragment1"
     android:padding="16dp">
-
-    <!-- TODO: Update blank fragment layout -->
 
     <TextView
         android:layout_width="wrap_content"
@@ -19,7 +17,7 @@
         android:layout_width="344dp"
         android:layout_height="50dp"
         android:autofillHints=""
-        android:hint="First name"
+        android:hint="Pero"
         android:inputType="text" />
 
 
@@ -34,7 +32,21 @@
         android:layout_height="50dp"
         android:inputType="text"
         android:autofillHints=""
-        android:hint="Last name"/>
+        android:hint="Peric"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Age:"/>
+
+    <EditText
+        android:id="@+id/age_edit_text"
+        android:layout_width="345dp"
+        android:layout_height="50dp"
+        android:inputType="number"
+        android:hint="20"
+        android:autofillHints="" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -47,19 +59,6 @@
         android:layout_height="50dp"
         android:inputType="number"
         android:hint="OIB"
-        android:autofillHints="" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Age:"/>
-
-    <EditText
-        android:id="@+id/age_edit_text"
-        android:layout_width="345dp"
-        android:layout_height="50dp"
-        android:inputType="number"
-        android:hint="Number"
         android:autofillHints="" />
 
     <Button
