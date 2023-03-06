@@ -10,21 +10,12 @@ import android.widget.Button
 import android.widget.EditText
 import androidx.lifecycle.ViewModelProvider
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
 
-/**
- * A simple [Fragment] subclass.
- * Use the [fragment1.newInstance] factory method to
- * create an instance of this fragment.
- */
 class fragment1 : Fragment() {
-    // TODO: Rename and change types of parameters
+
     lateinit var viewModel : ContactsView
 
-    override fun onCreate(savedInstanceState: Bundle?) {
+   override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
             viewModel = ViewModelProvider(requireActivity()).get(ContactsView::class.java)
@@ -36,7 +27,8 @@ class fragment1 : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        val nameText = view?.findViewById<EditText>(R.id.name_edit_text)
+        val returnval = inflater.inflate(R.layout.fragment_p1, container, false)
+       /* val nameText = view?.findViewById<EditText>(R.id.name_edit_text)
         val lastnameText = view?.findViewById<EditText>(R.id.last_name_edit_text)
         val ageText = view?.findViewById<EditText>(R.id.age_edit_text)
         val oibText = view?.findViewById<EditText>(R.id.oib_edit_text)
@@ -59,28 +51,8 @@ class fragment1 : Fragment() {
                 viewModel.addContact(Person(name,lastname,age,oib))
                 clear()
             }
-        }
+        }*/
 
-        return inflater.inflate(R.layout.fragment_p1, container, false)
-    }
-
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment p1.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            fragment1().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
+        return returnval
     }
 }
