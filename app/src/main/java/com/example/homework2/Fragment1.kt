@@ -43,7 +43,6 @@ class Fragment1 : Fragment() {
             viewModel.addContact(Person(name, lastname, age, oib))
             clear()
         }
-
         return returnValue
     }
 }

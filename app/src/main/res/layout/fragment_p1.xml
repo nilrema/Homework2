@@ -10,55 +10,62 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="First name:"/>
+        android:text="@string/add_contact"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/first_name"/>
 
     <EditText
         android:id="@+id/name_edit_text"
-        android:layout_width="344dp"
+        android:layout_width="345dp"
         android:layout_height="50dp"
         android:autofillHints=""
-        android:hint="Pero"
+        android:hint="@string/name_hint"
         android:inputType="text" />
 
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Last name:" />
+        android:text="@string/last_name" />
 
     <EditText
         android:id="@+id/last_name_edit_text"
-        android:layout_width="348dp"
+        android:layout_width="345dp"
         android:layout_height="50dp"
         android:inputType="text"
         android:autofillHints=""
-        android:hint="Peric"/>
+        android:hint="@string/last_name_hint"/>
 
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Age:"/>
+        android:text="@string/age"/>
 
     <EditText
         android:id="@+id/age_edit_text"
         android:layout_width="345dp"
         android:layout_height="50dp"
         android:inputType="number"
-        android:hint="20"
+        android:hint="@string/age_hint"
         android:autofillHints="" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="OIB:"/>
+        android:text="@string/oib"/>
 
     <EditText
         android:id="@+id/oib_edit_text"
-        android:layout_width="347dp"
+        android:layout_width="345dp"
         android:layout_height="50dp"
         android:inputType="number"
-        android:hint="OIB"
+        android:hint="@string/oib_hint"
         android:autofillHints="" />
 
     <Button
@@ -66,7 +73,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="Add"/>
+        android:text="@string/add"/>
 
 
 </LinearLayout>

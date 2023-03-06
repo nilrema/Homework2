@@ -24,6 +24,18 @@ class MainActivity : AppCompatActivity() {
                 1 -> tab.text = "Contacts"
             }
         }.attach()
+
+        viewPager.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
+            override fun onPageSelected(position: Int) {
+                val title = when (position) {
+                    0 -> "Add"
+                    1 -> "Contacts"
+                    else -> "Invalid tab"
+                }
+                supportActionBar?.title = title
+            }
+        })
+
     }
 }
 

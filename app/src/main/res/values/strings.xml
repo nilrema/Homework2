@@ -2,4 +2,16 @@
     <string name="app_name">Homework#2</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="first_name">First name</string>
+    <string name="name_hint">Pero</string>
+    <string name="last_name">Last name</string>
+    <string name="last_name_hint">Peric</string>
+    <string name="age">Age</string>
+    <string name="age_hint">20</string>
+    <string name="oib">OIB</string>
+    <string name="add">Add</string>
+    <string name="oib_hint">15248370282</string>
+    <string name="add_contact">Create a new person</string>
+    <string name="contacts">Contacts</string>
+    <string name="tab_layout_description">tab_layout</string>
 </resources>

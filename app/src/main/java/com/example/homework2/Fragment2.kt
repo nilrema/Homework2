@@ -22,15 +22,12 @@ class Fragment2 : Fragment() {
     ): View? {
         val returnValue = inflater.inflate(R.layout.fragment_p2, container, false)
         contactsList = returnValue.findViewById(R.id.contacts)
-        return returnValue
-    }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
         viewModel = ViewModelProvider(requireActivity())[ContactsView::class.java]
-        viewModel.contacts.observe(viewLifecycleOwner) { contacts ->
+        viewModel.contactsLiveData.observe(viewLifecycleOwner) { contacts ->
             updateContactsList(contacts)
         }
+        return returnValue
     }
 
     private fun updateContactsList(contacts: List<Person>) {
@@ -38,14 +35,14 @@ class Fragment2 : Fragment() {
         for (contact in contacts) {
             val textView = TextView(requireContext())
             textView.text = buildString {
-        append(contact.name)
-        append(" ")
-        append(contact.lastname)
-        append(",")
-        append(contact.age)
-        append(",")
-        append(contact.oib)
-    }
+                append(contact.name)
+                append(" ")
+                append(contact.lastname)
+                append(", ")
+                append(contact.age)
+                append(", ")
+                append(contact.oib)
+            }
             contactsList.addView(textView)
         }
     }

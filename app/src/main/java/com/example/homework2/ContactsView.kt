@@ -6,14 +6,9 @@ import androidx.lifecycle.ViewModel
 
 class ContactsView : ViewModel() {
 
-    private val _contacts = MutableLiveData<MutableList<Person>>()
+    private val _contacts = MutableLiveData<MutableList<Person>>(mutableListOf())
 
-    // Initialize the list
-    init {
-        _contacts.value = mutableListOf()
-    }
-
-    val contacts: LiveData<MutableList<Person>>
+    val contactsLiveData: LiveData<MutableList<Person>>
         get() = _contacts
 
     fun addContact(person: Person) {
