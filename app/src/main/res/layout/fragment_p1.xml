@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment1"
+    android:padding="16dp">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="First name:"/>
+
+    <EditText
+        android:id="@+id/name_edit_text"
+        android:layout_width="344dp"
+        android:layout_height="50dp"
+        android:autofillHints=""
+        android:hint="First name"
+        android:inputType="text" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Last name:" />
+
+    <EditText
+        android:id="@+id/last_name_edit_text"
+        android:layout_width="348dp"
+        android:layout_height="50dp"
+        android:inputType="text"
+        android:autofillHints=""
+        android:hint="Last name"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OIB:"/>
+
+    <EditText
+        android:id="@+id/oib_edit_text"
+        android:layout_width="347dp"
+        android:layout_height="50dp"
+        android:inputType="number"
+        android:hint="OIB"
+        android:autofillHints="" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Age:"/>
+
+    <EditText
+        android:id="@+id/age_edit_text"
+        android:layout_width="345dp"
+        android:layout_height="50dp"
+        android:inputType="number"
+        android:hint="Number"
+        android:autofillHints="" />
+
+    <Button
+        android:id="@+id/add_contact_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"/>
+
+
+</LinearLayout>
