@@ -1,51 +1,49 @@
 package com.example.homework2
 
+import android.R
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.LinearLayout
-import android.widget.TextView
+import android.widget.ArrayAdapter
+import android.widget.ListView
 import androidx.lifecycle.ViewModelProvider
+import com.example.homework2.databinding.FragmentP2Binding
 
 
 class Fragment2 : Fragment() {
 
-    private lateinit var viewModel: ContactsView
-    private lateinit var contactsList: LinearLayout
+    private lateinit var viewModel: GarageView
+    private lateinit var carsList: ListView
+    private lateinit var binding: FragmentP2Binding
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        val returnValue = inflater.inflate(R.layout.fragment_p2, container, false)
-        contactsList = returnValue.findViewById(R.id.contacts)
+    ): View {
+        binding = FragmentP2Binding.inflate(inflater, container, false)
+        carsList = binding.garage
 
-        viewModel = ViewModelProvider(requireActivity())[ContactsView::class.java]
-        viewModel.contactsLiveData.observe(viewLifecycleOwner) { contacts ->
-            updateContactsList(contacts)
+        viewModel = ViewModelProvider(requireActivity())[GarageView::class.java]
+        viewModel.garageLiveData.observe(viewLifecycleOwner) { cars ->
+            updateCarsList(cars)
         }
-        return returnValue
+        return binding.root
     }
 
-    private fun updateContactsList(contacts: List<Person>) {
-        contactsList.removeAllViews()
-        for (contact in contacts) {
-            val textView = TextView(requireContext())
-            textView.text = buildString {
-                append(contact.name)
-                append(" ")
-                append(contact.lastname)
-                append(", ")
-                append(contact.age)
-                append(", ")
-                append(contact.oib)
-            }
-            contactsList.addView(textView)
+    private fun updateCarsList(garage: List<Car>) {
+        val carListItems = ArrayList<String>()
+        for (car in garage) {
+            val item = "${car.make} ${car.model}, ${car.color}, ${car.price}, ${car.year}"
+            carListItems.add(item)
         }
+
+        val adapter = ArrayAdapter(requireContext(), R.layout.simple_list_item_1, carListItems)
+        carsList.adapter = adapter
     }
+
 }
 
 
