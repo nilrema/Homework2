@@ -1,16 +1,39 @@
 <resources>
     <string name="app_name">Homework#2</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="first_name">First name</string>
-    <string name="name_hint">Pero</string>
-    <string name="last_name">Last name</string>
-    <string name="last_name_hint">Peric</string>
-    <string name="age">Age</string>
-    <string name="age_hint">20</string>
-    <string name="oib">OIB</string>
+    <string name="make">Manufacturer</string>
+    <string name="make_hint">Mercedes Benz</string>
+    <string name="model">Model</string>
+    <string name="model_hint">C63</string>
+    <string name="year">Production year</string>
+    <string name="year_hint">2018.</string>
+    <string name="price">Price</string>
     <string name="add">Add</string>
-    <string name="oib_hint">15248370282</string>
-    <string name="add_contact">Create a new person</string>
-    <string name="contacts">Contacts</string>
+    <string name="price_hint">100000</string>
+    <string name="add_car">Create a new car</string>
+    <string name="garage">Garage</string>
     <string name="tab_layout_description">tab_layout</string>
+    <string name="red">Red</string>
+    <string name="blue">Blue</string>
+    <string name="green">Green</string>
+    <string name="yellow">Yellow</string>
+    <string name="purple">Purple</string>
+    <string name="color">Color</string>
+    <string name="tyres">Tyres</string>
+
+    <string-array name="tyres_array">
+        <item>@string/winter_tyres</item>
+        <item>@string/summer_tyres</item>
+        <item>@string/season_tyres</item>
+        <item>@string/slicks</item>
+    </string-array>
+
+    <string name="winter_tyres">Winter</string>
+    <string name="summer_tyres">Summer</string>
+    <string name="season_tyres">Season</string>
+    <string name="slicks">Slicks</string>
+
+    <string name="fill_fields">Please fill out all fields!</string>
+    <string name="valid_year">Please enter a valid year!</string>
+    <string name="valid_price">Please enter a valid price!</string>
+    <string name="invalid_tab">Invalid tab</string>
 </resources>
