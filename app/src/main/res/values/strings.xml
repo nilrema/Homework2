@@ -36,4 +36,6 @@
     <string name="valid_year">Please enter a valid year!</string>
     <string name="valid_price">Please enter a valid price!</string>
     <string name="invalid_tab">Invalid tab</string>
+    <string name="background_image">background_image</string>
+    <string name="tyres_spinner">tyres_spinner</string>
 </resources>
