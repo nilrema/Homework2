@@ -31,6 +31,10 @@ class Fragment2 : Fragment() {
         }
         return binding.root
     }
+    override fun onResume() {
+        super.onResume()
+        requireActivity().title = getString(R.string.garage)
+    }
 
     private fun updateCarsList(garage: List<Car>) {
         val carListItems = ArrayList<String>()

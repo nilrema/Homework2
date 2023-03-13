@@ -2,13 +2,14 @@ package com.example.homework2
 
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
+import android.widget.EditText
 import android.widget.RadioButton
 import android.widget.Toast
+import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.homework2.databinding.FragmentP1Binding
 
@@ -43,6 +44,11 @@ class Fragment1 : Fragment() {
             }
         }
         return binding.root
+    }
+
+    override fun onResume() {
+        super.onResume()
+        requireActivity().title = getString(R.string.add)
     }
 
 
@@ -92,9 +98,13 @@ class Fragment1 : Fragment() {
     }
 
     private fun clear() {
-        binding.makeEditText.text?.clear()
-        binding.modelEditText.text?.clear()
-        binding.yearEditText.text?.clear()
-        binding.priceEditText.text?.clear()
+        val editTexts = listOf(binding.makeEditText, binding.modelEditText, binding.yearEditText, binding.priceEditText)
+        for (editText in editTexts) {
+            editText.clearText()
+        }
+    }
+
+    private fun EditText.clearText() {
+        text?.clear()
     }
 }
