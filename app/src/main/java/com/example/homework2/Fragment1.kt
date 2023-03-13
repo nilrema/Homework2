@@ -53,10 +53,10 @@ class Fragment1 : Fragment() {
 
 
     private fun createCarFromInput(): Car? {
-        val make = binding.makeEditText.text.toString()
-        val model = binding.modelEditText.text.toString()
-        val yearText = binding.yearEditText.text.toString()
-        val priceText = binding.priceEditText.text.toString()
+        val make = binding.makeEditText.getStringValue()
+        val model = binding.modelEditText.getStringValue()
+        val yearText = binding.yearEditText.getStringValue()
+        val priceText = binding.priceEditText.getStringValue()
 
         if (make.isBlank() || model.isBlank() || yearText.isBlank() || priceText.isBlank()) {
             Toast.makeText(requireContext(), getString(R.string.fill_fields), Toast.LENGTH_SHORT).show()
@@ -106,5 +106,8 @@ class Fragment1 : Fragment() {
 
     private fun EditText.clearText() {
         text?.clear()
+    }
+    private fun EditText.getStringValue(): String {
+        return this.text.toString()
     }
 }
