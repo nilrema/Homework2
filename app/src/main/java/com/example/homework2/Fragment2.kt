@@ -1,6 +1,5 @@
 package com.example.homework2
 
-import android.R
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -32,16 +31,18 @@ class Fragment2 : Fragment() {
         }
         return binding.root
     }
+    override fun onResume() {
+        super.onResume()
+        requireActivity().title = getString(R.string.garage)
+    }
 
     private fun updateCarsList(garage: List<Car>) {
         val carListItems = ArrayList<String>()
         for (car in garage) {
-            val item = "${car.make} ${car.model}, ${car.color}, ${car.price}, ${car.year}"
+            val item = "${car.make} ${car.model}, ${car.color}, ${car.year}, ${car.price}"
             carListItems.add(item)
         }
-
-        val adapter = ArrayAdapter(requireContext(), R.layout.simple_list_item_1, carListItems)
-        carsList.adapter = adapter
+        carsList.adapter = ArrayAdapter(requireContext(), android.R.layout.simple_list_item_1, carListItems)
     }
 
 }

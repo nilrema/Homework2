@@ -11,7 +11,6 @@
     <string name="price_hint">100000</string>
     <string name="add_car">Create a new car</string>
     <string name="garage">Garage</string>
-    <string name="tab_layout_description">tab_layout</string>
     <string name="red">Red</string>
     <string name="blue">Blue</string>
     <string name="green">Green</string>
@@ -35,5 +34,6 @@
     <string name="fill_fields">Please fill out all fields!</string>
     <string name="valid_year">Please enter a valid year!</string>
     <string name="valid_price">Please enter a valid price!</string>
-    <string name="invalid_tab">Invalid tab</string>
+    <string name="background_image">background_image</string>
+    <string name="tyres_spinner">tyres_spinner</string>
 </resources>
