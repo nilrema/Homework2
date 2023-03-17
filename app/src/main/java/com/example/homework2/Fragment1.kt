@@ -18,7 +18,14 @@ class Fragment1 : Fragment() {
 
     private lateinit var viewModel : GarageView
     private lateinit var binding : FragmentP1Binding
+    private lateinit var adapter: GarageRecyclerAdapter
 
+
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setHasOptionsMenu(true)
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

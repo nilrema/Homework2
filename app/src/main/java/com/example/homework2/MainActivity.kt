@@ -1,5 +1,6 @@
 package com.example.homework2
 
+import Fragment2
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.homework2.databinding.ActivityMainBinding
@@ -13,6 +14,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        //setSupportActionBar(binding.toolbar)
 
 
         supportFragmentManager.beginTransaction()
