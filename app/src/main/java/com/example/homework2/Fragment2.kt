@@ -41,6 +41,9 @@ class Fragment2 : Fragment() {
             updateCarsList(cars)
         }
 
+        updateCarsList(viewModel.garageLiveData.value ?: listOf())
+
+
         return binding.root
     }
 

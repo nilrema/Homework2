@@ -36,4 +36,27 @@
     <string name="valid_price">Please enter a valid price!</string>
     <string name="background_image">background_image</string>
     <string name="tyres_spinner">tyres_spinner</string>
+    <string name="added_car">Added car: %1\$s %2\$s (%3\$d) - %4\$s - $%5\$.2f</string>
+
+
+    <!--Manufacturer names-->
+    <string name="Ferrari">Ferrari</string>
+    <string name="Mercedes">Mercedes</string>
+    <string name="Toyota">Toyota</string>
+    <string name="Honda">Honda</string>
+    <string name="Ford">Ford</string>
+    <string name="BMW">BMW</string>
+    <string name="Aston_Martin">Aston Martin</string>
+    <string name="Rimac">Rimac</string>
+    <string name="Mazda">Mazda</string>
+    <string name="Volkswagen">Volkswagen</string>
+    <string name="VW">VW</string>
+    <string name="Mercedes_Benz">Mercedes-Benz</string>
+
+    <!-- URLs-->
+    <string name="ferrari_URL">https://cdn.cdnlogo.com/logos/s/64/scuderia-ferrari.svg</string>
+    <string name="add_another_car">Feel free to add another car!</string>
+    <string name="dummy_text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. "</string>
+
+
 </resources>

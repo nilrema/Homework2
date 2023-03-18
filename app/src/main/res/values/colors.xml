@@ -12,4 +12,8 @@
     <color name="primary_variant_color">#FF5951</color>
     <color name="text_color">#FFFFFF</color>
     <color name="status_bar_color">#FF5951</color>
+
+    <color name="light_yellow">#FFFB16</color>
+    <color name="light_green">#98FF16</color>
+    <color name="light_red">#FF4E4E</color>
 </resources>
