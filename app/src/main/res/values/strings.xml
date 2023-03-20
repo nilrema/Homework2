@@ -53,6 +53,69 @@
     <string name="VW">VW</string>
     <string name="Mercedes_Benz">Mercedes-Benz</string>
 
+    <!--Manufacturer descriptions-->
+    <string name="ferrari_description">Ferrari is an Italian luxury sports car manufacturer founded in 1947 by Enzo Ferrari.
+        The company produces high-performance vehicles that are renowned for their sleek designs, powerful engines, and precision engineering.
+        Ferrari is known for its racing heritage and has been a dominant force in Formula One racing since the sport\'s inception.
+        The company produces a range of vehicles, including supercars, grand tourers, and limited edition models.
+        Ferrari is also famous for its iconic logo, the prancing horse, which is a symbol of power, speed, and elegance.
+        Today, Ferrari is considered one of the most prestigious and valuable brands in the automotive industry. </string>
+    <string name="mercedes_description">Mercedes is a German luxury automobile brand that produces a wide range of vehicles, including cars, buses, trucks, and even boats.
+        The company was founded in 1926 and has since become known for its high-quality, high-performance vehicles that are often at the forefront of innovation and technology.
+        Mercedes is known for its iconic three-pointed star logo and its commitment to luxury and comfort, as well as safety and reliability.
+        Over the years, the company has developed a reputation for producing some of the most luxurious and technologically advanced vehicles in the world, from the sporty and stylish C-Class to the iconic S-Class flagship sedan.
+        Mercedes has also been involved in various forms of motorsport over the years, including Formula One racing.</string>
+    <string name="toyota_description">Toyota is a Japanese multinational automotive manufacturer headquartered in Toyota City, Aichi, Japan.
+        The company was founded in 1937 by Kiichiro Toyoda, and it is now the world\'s second-largest automobile manufacturer behind Volkswagen, based on annual sales.
+        Toyota produces a wide range of vehicles, including cars, trucks, vans, and SUVs, and it has a reputation for reliability and quality.
+        Toyota has popular models such as the Camry, Corolla, RAV4, and Prius, among many others.
+        The company also has a strong focus on hybrid and electric vehicles, with the Prius being one of the most popular hybrid vehicles in the world.</string>
+    <string name="honda_description">Honda is a Japanese multinational corporation that produces a wide range of products, including automobiles, motorcycles, power equipment, and robotics.
+        Honda\'s automotive division is one of the largest and most respected in the world, known for producing reliable, efficient, and innovative vehicles.
+        Honda was founded in 1948 by Soichiro Honda, who started the company by producing motorized bicycles.
+        Today, Honda produces cars and trucks in factories around the world and is known for popular models such as the Civic, Accord, CR-V, and Pilot.
+        In addition to automobiles, Honda produces a range of motorcycles, including sport bikes, cruisers, and off-road models, as well as power equipment such as lawn mowers, generators, and snow blowers.
+        The company is also involved in robotics research and development, with a particular focus on humanoid robots designed to assist people with daily tasks.
+        Honda is committed to sustainability and has developed a number of environmentally friendly technologies, including hybrid and electric powertrains for its vehicles.</string>
+    <string name="ford_description">Ford is an American multinational automobile manufacturer that designs, manufactures, markets, and services a wide range of cars, trucks, SUVs, electrified vehicles, and luxury vehicles.
+        The company was founded by Henry Ford in 1903 and is headquartered in Dearborn, Michigan.
+        Ford is one of the largest car makers in the world and has a significant global presence. The company is known for its iconic Mustang sports car, F-Series trucks, and pioneering work in the field of automotive technology.
+        Ford has also been active in motorsports, with successes in events such as the Le Mans 24 Hours and the World Rally Championship.</string>
+    <string name="bmw_description">BMW is a German luxury automobile, motorcycle, and engine manufacturing company founded in 1916.
+        The name BMW stands for Bayerische Motoren Werke, which translates to Bavarian Motor Works in English.
+        BMW is known for producing high-performance and stylish vehicles, and has a reputation for quality engineering and cutting-edge technology.
+        BMW produces a range of vehicles, including sedans, coupes, convertibles, SUVs, and sports cars.
+        The company also produces motorcycles and provides financial services, such as leasing and financing options for its vehicles</string>
+    <string name="astonmartin_description">Aston Martin is a luxury British sports car brand known for its iconic and stylish designs, high performance, and exclusivity.
+        Founded in 1913 by Lionel Martin and Robert Bamford, the company has a long history of producing handcrafted vehicles for the wealthy and famous.
+        Today, Aston Martin produces a range of sports cars and grand tourers, including the iconic DB series, the Vantage, and the Rapide.
+        The brand is synonymous with luxury, sophistication, and speed, and is highly regarded in the automotive industry for its engineering excellence and timeless designs.</string>
+    <string name="rimac_description">Rimac Automobili is a Croatian car manufacturer specializing in the production of high-performance electric vehicles, drivetrains and battery systems.
+        Founded in 2009 by Mate Rimac, the company gained recognition for its all-electric hypercar, the Rimac Concept One, which was introduced in 2011.
+        Rimac has since developed several other models, including the Rimac C_Two, which has a top speed of 258 mph and is considered one of the most powerful electric cars ever built.
+        The company also supplies electric drivetrains and battery systems to other car manufacturers, including Porsche, Aston Martin and Koenigsegg.</string>
+    <string name="mazda_description">Mazda is a Japanese automaker known for producing sporty and reliable cars.
+        The company has a reputation for innovation, with a focus on developing lightweight and fuel-efficient engines, as well as advanced safety features.
+        Mazda\'s design philosophy, known as Kodo, emphasizes a sense of motion and sleekness, which is reflected in the company\'s car models.
+        In recent years, Mazda has also made a push towards electric and hybrid vehicles, demonstrating a commitment to sustainable and eco-friendly technology.
+        Overall, Mazda is a well-regarded automaker with a strong emphasis on quality, innovation, and driving enjoyment.</string>
+    <string name="volkswagen_description">Volkswagen, often abbreviated as VW, is a German multinational automotive manufacturing company founded in 1937.
+        It is the flagship brand of the Volkswagen Group, which is the largest automaker in the world in terms of revenue.
+        Volkswagen produces a wide range of vehicles, from small cars to luxury vehicles, and is known for its iconic Beetle and Golf models.
+        The company is also a leader in electric vehicle development, with models such as the ID.4 and ID.3.
+        Despite some recent controversies, including the 2015 diesel emissions scandal, Volkswagen remains a significant player in the global automotive industry.</string>
+
+    <!--Tyre descriptions-->
+    <string name="winter_description">This car has winter tyres. Winter tires are designed to provide better traction, handling, and braking in cold weather, snow, and ice. They have a different tread pattern with more grooves and sipes (tiny slits) that bite into snow and ice, and a softer rubber compound that stays pliable in freezing temperatures. This enables them to grip the road better than summer or all-season tires, which become harder and lose traction in colder temperatures. Winter tires are typically marked with a mountain and snowflake symbol on the sidewall, indicating they meet industry standards for snow traction.</string>
+    <string name="summer_description">This car has summer tyres. Summer tires are designed to provide maximum performance and handling in warm and dry conditions. They have a tread pattern that is optimized for dry and wet roads, with less emphasis on snow and ice traction. Summer tires typically have a harder rubber compound than all-season or winter tires, which allows them to maintain their grip and shape at higher temperatures. They also have wider grooves to help channel water away from the tire, which reduces the risk of hydroplaning. Summer tires are ideal for high-performance vehicles and driving enthusiasts who demand the best possible handling and cornering performance in warm weather.</string>
+    <string name="season_description">This car has all-season tyres. All-season tires are designed to provide reliable handling and performance in a wide range of weather conditions, including dry, wet, and light snow. They are typically made with a tread pattern and rubber compound that is optimized for both warm and cold weather, allowing them to provide good traction and grip on a variety of surfaces. All-season tires are a popular choice for drivers who want a single set of tires that can be used year-round, without the need for separate winter tires. However, it\'s important to note that all-season tires may not perform as well in extreme winter conditions as dedicated winter tires.</string>
+    <string name="slicks_description">This car has slick tyres. Slick tyres are a type of racing tyre that has no tread pattern, providing maximum contact with the road. They are designed to give race cars better grip and handling on smooth, dry tracks. Slick tyres are made from a softer compound than regular tyres, allowing them to heat up more quickly and provide better traction. They also have a larger contact patch, which means more rubber is in contact with the road, resulting in more grip. Slick tyres are used in a variety of racing categories, including Formula 1, IndyCar, and sports car racing.</string>
+
+    <!--Price descriptions-->
+    <string name="affordable_description">From a price standpoint, this is an affordable car. With its efficient engine and reliable performance, this car is perfect for those on a tight budget who want to save on gas without sacrificing style or comfort. It comes with a spacious interior that can accommodate up to five passengers, and a trunk that has plenty of room for your daily essentials. Equipped with modern features such as a touchscreen display, Bluetooth connectivity, and a rearview camera, you can enjoy the latest technology without breaking the bank. This car is not only affordable, but also safe and practical, making it the perfect choice for anyone who wants to get around town in style and comfort without spending a fortune.</string>
+    <string name="midrange_description">From a price standpoint, this is a mid-range car. The car is the perfect choice for those who want a reliable, comfortable car that won\'t break the bank. With a spacious interior and sleek exterior design, this car offers a smooth and enjoyable ride for drivers and passengers alike. Equipped with a fuel-efficient engine, the car delivers great mileage, saving you money at the pump. The advanced safety features, such as blind-spot monitoring and rearview camera, offer peace of mind while driving. In addition, the car comes equipped with the latest infotainment technology, including a touchscreen display, Apple CarPlay, and Android Auto integration. With a price tag that won\'t break the bank, the car is the perfect choice for anyone looking for a reliable, stylish car at an affordable price.</string>
+    <string name="expensive_description">From a price standpoint, this is a high-end expensive car. Imagine cruising down the highway in a sleek and luxurious sports car that exudes elegance and speed. The engine roars as you hit the gas, propelling you forward with lightning-fast acceleration. The aerodynamic design hugs the road, offering unparalleled handling and control as you weave through traffic. The interior is lined with supple leather and high-end features, from the sound system to the climate control, giving you the ultimate driving experience. Every inch of this car is crafted with precision and attention to detail, making it not just a vehicle, but a work of art. It\'s a status symbol, a symbol of success, and the envy of anyone who catches a glimpse of it. This car is the embodiment of luxury and performance, and it\'s worth every penny for those who demand the best.</string>
+
     <!-- URLs-->
     <string name="ferrari_URL">https://cdn.cdnlogo.com/logos/s/64/scuderia-ferrari.svg</string>
     <string name="add_another_car">Feel free to add another car!</string>

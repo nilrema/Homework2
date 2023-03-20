@@ -14,7 +14,7 @@ fun Color.getHex() : Int{
     return this.hexValue.toInt()
 }
 enum class Tyres {
-    WINTER, SUMMER, SEASON, SLICKS
+    WINTER, SUMMER, SEASON, SLICKS;
 }
 
 

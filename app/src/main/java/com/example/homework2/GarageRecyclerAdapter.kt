@@ -24,6 +24,7 @@ class GarageRecyclerAdapter(private val context: Context, val carsList: ArrayLis
 
     }
 
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): GarageViewHolder {
         val inflater = LayoutInflater.from(parent.context)
         val binding = OneCarLayoutBinding.inflate(inflater, parent, false)
@@ -34,6 +35,7 @@ class GarageRecyclerAdapter(private val context: Context, val carsList: ArrayLis
         val car = carsList[position]
         val carInfo = "${car.make} ${car.model} (${car.color})"
         holder.binding.carInfo.text = carInfo
+
 
         when(car.make) {
             context.getString(R.string.Ferrari) -> holder.binding.itemImage.setImageResource(R.drawable.ferrarilogo)
