@@ -12,6 +12,7 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.homework2.databinding.FragmentP1Binding
+import com.google.android.material.snackbar.Snackbar
 
 
 class Fragment1 : Fragment() {
@@ -19,6 +20,12 @@ class Fragment1 : Fragment() {
     private lateinit var viewModel : GarageView
     private lateinit var binding : FragmentP1Binding
 
+
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setHasOptionsMenu(true)
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -41,6 +48,10 @@ class Fragment1 : Fragment() {
             if (car != null) {
                 viewModel.addVehicle(car)
                 clear()
+
+                val carInfo = "${car.make} ${car.model} (${car.color}), ${car.year}, ${car.price}"
+                Snackbar.make(binding.root, "Added car: $carInfo", Snackbar.LENGTH_LONG).show()
+                //Toast.makeText(requireContext(), getString(R.string.add_another_car), Toast.LENGTH_SHORT).show()
             }
         }
         return binding.root
@@ -58,20 +69,27 @@ class Fragment1 : Fragment() {
         val yearText = binding.yearEditText.getStringValue()
         val priceText = binding.priceEditText.getStringValue()
 
-        if (make.isBlank() || model.isBlank() || yearText.isBlank() || priceText.isBlank()) {
-            Toast.makeText(requireContext(), getString(R.string.fill_fields), Toast.LENGTH_SHORT).show()
+        if (make.isBlank() || model.isBlank()) {
+            binding.makeEditText.error = getString(R.string.fill_fields)
+            binding.makeEditText.requestFocus()
             return null
         }
 
         val year = yearText.toIntOrNull()
-        if (year == null || year < 1886 || year > 2024) {
-            Toast.makeText(requireContext(), getString(R.string.valid_year), Toast.LENGTH_SHORT).show()
+        if (year == null) {
+            val errorText = getString(R.string.valid_year)
+            binding.yearEditText.error = errorText
+            binding.yearEditText.requestFocus()
+            return null
+        } else if(year < 1886 || year > 2024) {
+            Toast.makeText(context, R.string.invalid_year, Toast.LENGTH_SHORT).show()
             return null
         }
 
         val price = priceText.toDoubleOrNull()
         if (price == null || price < 0) {
-            Toast.makeText(requireContext(), getString(R.string.valid_price), Toast.LENGTH_SHORT).show()
+            binding.priceEditText.error = getString(R.string.valid_price)
+            binding.priceEditText.requestFocus()
             return null
         }
 

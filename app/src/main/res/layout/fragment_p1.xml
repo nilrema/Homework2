@@ -89,7 +89,7 @@
 
         <RadioGroup
             android:id="@+id/color_radio_group"
-            android:layout_width="301dp"
+            android:layout_width="319dp"
             android:layout_height="wrap_content"
             android:background="@drawable/garage_house2"
             android:orientation="vertical">

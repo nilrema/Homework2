@@ -14,6 +14,8 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        //setSupportActionBar(binding.toolbar)
+
 
         supportFragmentManager.beginTransaction()
             .replace(R.id.fragment_container, Fragment1())
