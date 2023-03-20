@@ -38,6 +38,7 @@
     <string name="tyres_spinner">tyres_spinner</string>
     <string name="added_car">Added car: %1\$s %2\$s (%3\$d) - %4\$s - $%5\$.2f</string>
     <string name="details">Detailed information</string>
+    <string name="invalid_year">Invalid year!</string>
 
 
     <!--Manufacturer names-->
@@ -118,7 +119,19 @@
     <string name="expensive_description">From a price standpoint, this is a high-end expensive car. Imagine cruising down the highway in a sleek and luxurious sports car that exudes elegance and speed. The engine roars as you hit the gas, propelling you forward with lightning-fast acceleration. The aerodynamic design hugs the road, offering unparalleled handling and control as you weave through traffic. The interior is lined with supple leather and high-end features, from the sound system to the climate control, giving you the ultimate driving experience. Every inch of this car is crafted with precision and attention to detail, making it not just a vehicle, but a work of art. It\'s a status symbol, a symbol of success, and the envy of anyone who catches a glimpse of it. This car is the embodiment of luxury and performance, and it\'s worth every penny for those who demand the best.</string>
 
     <!-- URLs-->
-    <string name="ferrari_URL">https://cdn.cdnlogo.com/logos/s/64/scuderia-ferrari.svg</string>
+    <string name="ferrari_URL">https://upload.wikimedia.org/wikipedia/sco/thumb/d/d1/Ferrari-Logo.svg/1200px-Ferrari-Logo.svg.png</string>
+    <string name="mercedes_URL">https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Mercedes-Logo.svg/2048px-Mercedes-Logo.svg.png</string>
+    <string name="toyota_URL">https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Toyota.svg/2560px-Toyota.svg.png</string>
+    <string name="honda_URL">https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Honda.svg/1024px-Honda.svg.png</string>
+    <string name="ford_URL">https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Ford_logo_flat.svg/2560px-Ford_logo_flat.svg.png</string>
+    <string name="bmw_URL">https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/BMW.svg/800px-BMW.svg.png</string>
+    <string name="astonmartin_URL">https://upload.wikimedia.org/wikipedia/sco/thumb/e/e9/AstonMartinLogo.svg/2560px-AstonMartinLogo.svg.png</string>
+    <string name="mazda_URL">https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Mazda_logo.svg/1200px-Mazda_logo.svg.png</string>
+    <string name="rimac_URL">https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Rimac_Automobili_logo.svg/1200px-Rimac_Automobili_logo.svg.png</string>
+    <string name="volkswagen_URL">https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Volkswagen_logo_2019.svg/1024px-Volkswagen_logo_2019.svg.png</string>
+
+
+
     <string name="add_another_car">Feel free to add another car!</string>
     <string name="dummy_text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. "</string>
 

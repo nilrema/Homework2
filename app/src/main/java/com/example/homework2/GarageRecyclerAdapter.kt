@@ -2,13 +2,12 @@ package com.example.homework2
 
 import android.content.Context
 import android.content.Intent
-import android.content.res.ColorStateList
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import androidx.core.content.ContextCompat
+import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
+import coil.*
 import com.example.homework2.databinding.OneCarLayoutBinding
-import com.squareup.picasso.Picasso
 
 class GarageRecyclerAdapter(private val context: Context, val carsList: ArrayList<Car>) :
     RecyclerView.Adapter<GarageRecyclerAdapter.GarageViewHolder>() {
@@ -37,20 +36,7 @@ class GarageRecyclerAdapter(private val context: Context, val carsList: ArrayLis
         holder.binding.carInfo.text = carInfo
 
 
-        when(car.make) {
-            context.getString(R.string.Ferrari) -> holder.binding.itemImage.setImageResource(R.drawable.ferrarilogo)
-            context.getString(R.string.Mercedes)  -> holder.binding.itemImage.setImageResource(R.drawable.mercedeslogo)
-            context.getString(R.string.Mercedes_Benz) -> holder.binding.itemImage.setImageResource(R.drawable.mercedeslogo)
-            context.getString(R.string.Toyota) -> holder.binding.itemImage.setImageResource(R.drawable.toyotalogo)
-            context.getString(R.string.Honda) -> holder.binding.itemImage.setImageResource(R.drawable.hondalogo)
-            context.getString(R.string.Ford) -> holder.binding.itemImage.setImageResource(R.drawable.fordlogo)
-            context.getString(R.string.BMW) -> holder.binding.itemImage.setImageResource(R.drawable.bmwlogo)
-            context.getString(R.string.Aston_Martin) -> holder.binding.itemImage.setImageResource(R.drawable.astonmartinlogo)
-            context.getString(R.string.Rimac) -> holder.binding.itemImage.setImageResource(R.drawable.rimaclogo)
-            context.getString(R.string.Mazda) -> holder.binding.itemImage.setImageResource(R.drawable.mazdalogo)
-            context.getString(R.string.Volkswagen) -> holder.binding.itemImage.setImageResource(R.drawable.vwlogo)
-            else -> holder.binding.itemImage.setImageResource(R.drawable.garage_house2)
-        }
+        loadCarImage(car, holder.binding.itemImage, holder.itemView.context)
 
        /*holder.binding.root.backgroundTintList = ColorStateList.valueOf(
            when {
@@ -64,5 +50,29 @@ class GarageRecyclerAdapter(private val context: Context, val carsList: ArrayLis
     override fun getItemCount(): Int {
         return carsList.size
     }
+    private fun loadCarImage(car: Car, imageView: ImageView, context: Context) {
+        val imageUrl = when(car.make) {
+            context.getString(R.string.Ferrari) -> context.getString(R.string.ferrari_URL)
+            context.getString(R.string.Mercedes), context.getString(R.string.Mercedes_Benz) -> context.getString(R.string.mercedes_URL)
+            context.getString(R.string.Toyota) -> context.getString(R.string.toyota_URL)
+            context.getString(R.string.Honda) -> context.getString(R.string.honda_URL)
+            context.getString(R.string.Ford) -> context.getString(R.string.ford_URL)
+            context.getString(R.string.BMW) -> context.getString(R.string.bmw_URL)
+            context.getString(R.string.Aston_Martin) -> context.getString(R.string.astonmartin_URL)
+            context.getString(R.string.Rimac) -> context.getString(R.string.rimac_URL)
+            context.getString(R.string.Mazda) -> context.getString(R.string.mazda_URL)
+            context.getString(R.string.Volkswagen) -> context.getString(R.string.volkswagen_URL)
+            else -> null
+        }
+
+        if (imageUrl != null) {
+            imageView.load(imageUrl) {
+                placeholder(R.drawable.garage_house2)
+            }
+        } else {
+            imageView.setImageResource(R.drawable.garage_house2)
+        }
+    }
+
 }
 

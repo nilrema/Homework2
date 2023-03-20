@@ -1,4 +1,6 @@
-import android.content.Intent
+package com.example.homework2
+
+import android.annotation.SuppressLint
 import android.os.Build
 import android.os.Bundle
 import android.view.*
@@ -17,9 +19,6 @@ class Fragment2 : Fragment(){
     private lateinit var adapter: GarageRecyclerAdapter
     private lateinit var binding: FragmentP2Binding
 
-    interface OnCarClickListener {
-        fun onCarClick(position: Int)
-    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -61,6 +60,7 @@ class Fragment2 : Fragment(){
         }
     }
 
+    @SuppressLint("NotifyDataSetChanged")
     private fun updateCarsList(garage: List<Car>) {
         adapter.carsList.clear()
         adapter.carsList.addAll(garage)

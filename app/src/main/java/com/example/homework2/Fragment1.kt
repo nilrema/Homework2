@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.EditText
 import android.widget.RadioButton
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.homework2.databinding.FragmentP1Binding
@@ -75,10 +76,13 @@ class Fragment1 : Fragment() {
         }
 
         val year = yearText.toIntOrNull()
-        if (year == null || year < 1886 || year > 2024) {
+        if (year == null) {
             val errorText = getString(R.string.valid_year)
             binding.yearEditText.error = errorText
             binding.yearEditText.requestFocus()
+            return null
+        } else if(year < 1886 || year > 2024) {
+            Toast.makeText(context, R.string.invalid_year, Toast.LENGTH_SHORT).show()
             return null
         }
 

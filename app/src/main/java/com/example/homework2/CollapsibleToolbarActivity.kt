@@ -1,11 +1,14 @@
 package com.example.homework2
 
+import android.content.Intent
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.lifecycle.ViewModelProvider
 import coil.load
 import coil.size.Scale
 import com.example.homework2.databinding.ActivityCollapsibleToolbarBinding
+import java.io.Serializable
 
 class CollapsibleToolbarActivity : AppCompatActivity() {
     private lateinit var viewModel: GarageView
@@ -25,7 +28,8 @@ class CollapsibleToolbarActivity : AppCompatActivity() {
             scale(Scale.FILL)
         }
 
-        val car = intent.getSerializableExtra("car") as? Car
+
+        val car = intent.serializable("car") as? Car
         if (car != null) {
 
                 binding.scrollabletextview.text = buildString {
@@ -89,6 +93,11 @@ class CollapsibleToolbarActivity : AppCompatActivity() {
     override fun onResume() {
         super.onResume()
         title = getString(R.string.details)
+    }
+
+    private inline fun <reified T : Serializable> Intent.serializable(key: String): T? = when {
+        Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU -> getSerializableExtra(key, T::class.java)
+        else -> @Suppress("DEPRECATION") getSerializableExtra(key) as? T
     }
 }
 
