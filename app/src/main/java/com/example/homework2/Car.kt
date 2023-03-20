@@ -1,7 +1,7 @@
 package com.example.homework2
 
 
-data class Car(val make: String, val model: String, val year: Int, val color: Color, val price: Double, val tyres: Tyres)
+data class Car(val make: String, val model: String, val year: Int, val color: Color, val price: Double, val tyres: Tyres) : java.io.Serializable
 
 enum class Color(val hexValue: String) {
     RED("#FF0000"),

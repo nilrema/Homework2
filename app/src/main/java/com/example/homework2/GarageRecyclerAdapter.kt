@@ -13,15 +13,15 @@ import com.squareup.picasso.Picasso
 class GarageRecyclerAdapter(private val context: Context, val carsList: ArrayList<Car>) :
     RecyclerView.Adapter<GarageRecyclerAdapter.GarageViewHolder>() {
 
-    class GarageViewHolder(val binding: OneCarLayoutBinding) : RecyclerView.ViewHolder(binding.root) {
+    inner class GarageViewHolder(val binding: OneCarLayoutBinding) : RecyclerView.ViewHolder(binding.root) {
         init {
             itemView.setOnClickListener {
+                val car = carsList[adapterPosition]
                 val intent = Intent(itemView.context, CollapsibleToolbarActivity::class.java)
-                intent.putExtra("car", adapterPosition)
+                intent.putExtra("car", car)
                 itemView.context.startActivity(intent)
             }
         }
-
     }
 
 

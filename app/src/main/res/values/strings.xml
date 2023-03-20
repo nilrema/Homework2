@@ -37,6 +37,7 @@
     <string name="background_image">background_image</string>
     <string name="tyres_spinner">tyres_spinner</string>
     <string name="added_car">Added car: %1\$s %2\$s (%3\$d) - %4\$s - $%5\$.2f</string>
+    <string name="details">Detailed information</string>
 
 
     <!--Manufacturer names-->

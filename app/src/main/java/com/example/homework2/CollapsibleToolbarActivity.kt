@@ -25,10 +25,8 @@ class CollapsibleToolbarActivity : AppCompatActivity() {
             scale(Scale.FILL)
         }
 
-        val carPosition = intent.getIntExtra("car", -1)
-        if (carPosition != -1) {
-            val car = viewModel.garageLiveData.value?.get(carPosition)
-            if (car != null) {
+        val car = intent.getSerializableExtra("car") as? Car
+        if (car != null) {
 
                 binding.scrollabletextview.text = buildString {
                     append("Make: ")
@@ -87,8 +85,10 @@ class CollapsibleToolbarActivity : AppCompatActivity() {
 
             }
         }
+
+    override fun onResume() {
+        super.onResume()
+        title = getString(R.string.details)
     }
-
 }
-
 
